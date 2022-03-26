@@ -3,7 +3,7 @@
 # Design Desktop
 
 <img src='/assets/designs/Design Desktop - Tema Oscuro.png'>
-<img src='/assets/designs/Mobile Design - Tema Claro.png'>
+<img src='/assets/designs/Design Desktop - Tema Claro.png'>
 
 # Design Mobile
 
