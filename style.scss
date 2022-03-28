@@ -1,0 +1,170 @@
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+// font-family: 'Lora', serif;
+
+// Colors
+:root{
+--background-dark:    #181818;
+--background-claro:    #F4F0E2;
+
+// #505050
+// #F4E299
+// #D4E0E4
+// #6C859C
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+
+// Animaciones
+@keyframes respirar {
+    0%{
+        transform: translateY(-5px);
+
+    }
+    50%{
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+@keyframes EfectLluvia{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@media(min-width:375px){
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    height: 100vh;
+    background: var(--background-dark);
+    color: var(--background-claro);
+    overflow: hidden;
+    .Elipse1{
+        position: fixed;
+        width: 188.09px;
+        height: 187.98px;
+        left: 286px;
+        top: -20.75px;
+        background: linear-gradient(173.42deg, #F5E286 100%, rgba(255, 255, 255, 0.19) 24.65%, rgba(238, 229, 219, 0.94) 24.66%, rgba(243, 225, 145, 0.9) 100%);
+filter: blur(50px);
+border-radius: 100px;
+transform: rotate(-3.43deg);
+        animation: respirar 5s infinite ease-in-out;
+    }
+    .Elipse2{
+z-index: -1;
+position: fixed;
+width: 200.25px;
+height: 200.01px;
+left:-5rem;
+top: 6rem;
+border-radius: 100px;
+animation: respirar 5s infinite ease-in-out;
+background: linear-gradient(173.42deg, #88BCE7 50%, rgba(255, 255, 255, 0.19) 24.65%, rgba(238, 229, 219, 0.94) 24.66%, rgba(136, 188, 231, 0.16) 70.57%);
+filter: blur(50px);
+transform: rotate(-145.16deg);
+    }
+    .Elipse3{
+z-index: -1;
+position: fixed;
+width: 200px;
+height: 200px;
+left: 10rem;
+top: 31rem;
+border-radius: 100px;
+animation: respirar 5s infinite ease-in-out;
+background: linear-gradient(146.68deg, rgba(255, 209, 92, 0.65) 49.4%, rgba(255, 255, 255, 0.65) 81.38%);
+filter: blur(50px);
+transform: rotate(-53.25deg);
+    }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    // align-self: center;
+    margin: auto;
+    #SearchForm{
+        margin: 1rem;
+        label{
+            .SearchInput{
+                width: 30vh;
+                padding: 0.7rem;
+                border: none;
+                border-radius: 25px;
+                background-image: url(/assets/searchoscuro.svg);
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-position: 95% 50%;
+            }
+    }
+}
+.ContainerCity{
+    display: none;
+    h1{
+        font-size: 24px;
+    }
+       .centerSvg{
+           margin: 1rem;
+           #svgIcon{
+               width: 60%;
+            }
+        }
+        .Temp{
+            display: flex;
+            flex-direction: column;
+        }
+        .TempHumedad{
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .contMax{
+                display: flex;
+                flex-direction: column;
+            }
+            .contHum{
+                display: flex;
+                flex-direction: column;
+            }
+            .contMin{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+}
+.ContainerCityView{
+    display: block;
+    animation: EfectLluvia 4s;
+}
+
+}
+}
+
+
+
+
+

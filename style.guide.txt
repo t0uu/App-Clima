@@ -1,0 +1,14 @@
+--Colors--
+
+# Pueden usarlos de la manera que quieran!
+#F4F0E2
+#505050
+#181818
+#F4E299
+#D4E0E4
+#6C859C
+
+--Font--
+https://fonts.google.com/specimen/Lora?query=Lora
+
+
